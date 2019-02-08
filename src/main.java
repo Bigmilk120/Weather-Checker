@@ -7,8 +7,10 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.json.JSONString;
 
 
 import java.io.BufferedReader;
@@ -17,10 +19,11 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
 
 public class main {
-    public static String Api = "96f92938c8efe61afd7512b9e21d37ce";
-    public static String BASE_URL = "http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=";
+    public static String Api = "&appid=96f92938c8efe61afd7512b9e21d37ce&units=metric ";
+    public static String BASE_URL = "https://api.openweathermap.org/data/2.5/weather?q=Warsaw";
 
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder();
@@ -36,16 +39,24 @@ public class main {
                 throw new RuntimeException("Failed : HTTP error code : "
                         + conn.getResponseCode());
             }
+
             BufferedReader br = new BufferedReader(new InputStreamReader(
-                    (conn.getInputStream())));
+                    (conn.getInputStream())
+            ));
 
             String line;
+
             while ((line = br.readLine()) != null) {
                 sb.append(line);
             }
-            JSONObject json = new JSONObject(sb.toString());
 
-            System.out.println(json.getString("cod"));
+            JSONObject json = new JSONObject(sb.toString());
+            JSONObject data = json.getJSONObject("main");
+
+            System.out.println(data.getLong("temp"));
+
+
+
 
 
         }catch(Exception ex){

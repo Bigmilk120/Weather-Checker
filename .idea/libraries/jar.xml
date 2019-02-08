@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jar/httpcore-4.4.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/json-20140107.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/httpclient-cache-4.5.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/httpmime-4.5.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/httpclient-win-4.5.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/httpclient-4.5.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
