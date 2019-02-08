@@ -56,6 +56,9 @@ public class main {
             System.out.println(data.getLong("temp"));
 
 
+            JSONArray temp = json.getJSONArray("weather");
+            JSONObject x = temp.getJSONObject(0);
+            System.out.println(x.getString("description"));
 
 
 
