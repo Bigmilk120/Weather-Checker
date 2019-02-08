@@ -23,7 +23,7 @@ import java.util.ArrayList;
 
 public class main {
     public static String Api = "&appid=96f92938c8efe61afd7512b9e21d37ce&units=metric ";
-    public static String BASE_URL = "https://api.openweathermap.org/data/2.5/weather?q=Warsaw";
+    public static String BASE_URL = "https://api.openweathermap.org/data/2.5/weather?q=Kraków";
 
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder();
@@ -56,10 +56,22 @@ public class main {
             System.out.println(data.getLong("temp"));
 
 
-            JSONArray temp = json.getJSONArray("weather");
-            JSONObject x = temp.getJSONObject(0);
-            System.out.println(x.getString("description"));
+            JSONArray weather = json.getJSONArray("weather");
 
+
+            JSONObject description = weather.getJSONObject(0);
+            System.out.println(description.getString("description"));
+            System.out.println(data);
+            String[] info = new String[5];
+            info[0]=String.valueOf(data.getLong("temp"));
+            info[1]=String.valueOf(data.getLong("temp_min"));
+            info[2]=String.valueOf(data.getLong("humidity"));
+            info[3]=String.valueOf(data.getLong("pressure"));
+            info[4]=String.valueOf(data.getLong("temp_max"));
+
+            for(int i=0;i<=4;i++){
+                System.out.println(info[i]);
+            }
 
 
         }catch(Exception ex){
