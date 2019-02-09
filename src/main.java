@@ -2,6 +2,8 @@
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import javax.swing.*;
+
 public class main {
     public static void main(String[] args) {
 
@@ -13,8 +15,8 @@ public class main {
 
         String[] info = new String[5];
         ArrayMaker.setInfo(info,data);
-        System.out.println(info[2]);
 
         OutputGiver.getOutput(data, description);
+        JFrame display = new Frame();
     }
 }
