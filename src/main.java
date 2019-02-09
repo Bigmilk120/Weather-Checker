@@ -17,6 +17,6 @@ public class main {
         ArrayMaker.setInfo(info,data);
 
         OutputGiver.getOutput(data, description);
-        JFrame display = new Frame();
+        JFrame display = new Frame(data,description);
     }
 }
