@@ -16,21 +16,26 @@ import org.json.JSONString;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.Reader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class main {
     public static String Api = "&appid=96f92938c8efe61afd7512b9e21d37ce&units=metric ";
-    public static String BASE_URL = "https://api.openweathermap.org/data/2.5/weather?q=Kraków";
+    public static String BASE_URL = "https://api.openweathermap.org/data/2.5/weather?q=";
+    final static String DEGREE  = "\u00b0";
 
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder();
+        Scanner r = new Scanner(System.in);
 
+        String city = r.nextLine();
 
         try {
-            URL url = new URL(BASE_URL + Api);
+            URL url = new URL(BASE_URL + city + Api);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
             conn.setRequestProperty("Accept", "application/json");
@@ -53,15 +58,18 @@ public class main {
             JSONObject json = new JSONObject(sb.toString());
             JSONObject data = json.getJSONObject("main");
 
-            System.out.println(data.getLong("temp"));
+            System.out.println("Temperature at this moment: "+data.getLong("temp")+DEGREE+"C");
 
 
             JSONArray weather = json.getJSONArray("weather");
-
-
             JSONObject description = weather.getJSONObject(0);
-            System.out.println(description.getString("description"));
+
+
+            System.out.println("Weather today :"+description.getString("description"));
+
+
             System.out.println(data);
+
             String[] info = new String[5];
             info[0]=String.valueOf(data.getLong("temp"));
             info[1]=String.valueOf(data.getLong("temp_min"));
