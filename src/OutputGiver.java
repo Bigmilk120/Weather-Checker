@@ -9,13 +9,13 @@ public class OutputGiver {
     public static String giveWeather(JSONObject data, JSONObject description){
         return "Weather today: "+description.getString("description");
     }
-    public static JSONObject getData(){
-        JSONObject json = WeatherConnection.weatherGetter();
+    public static JSONObject getData(String city){
+        JSONObject json = WeatherConnection.weatherGetter(city);
         JSONObject data = json.getJSONObject("main");
         return data;
     }
-    public static JSONObject getDescription(){
-        JSONObject json = WeatherConnection.weatherGetter();
+    public static JSONObject getDescription(String city){
+        JSONObject json = WeatherConnection.weatherGetter(city);
         JSONArray weather = json.getJSONArray("weather");
         JSONObject description = weather.getJSONObject(0);
         return description;

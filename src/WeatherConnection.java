@@ -9,8 +9,7 @@ public class WeatherConnection {
     public static String Api = "&appid=96f92938c8efe61afd7512b9e21d37ce&units=metric ";
     public static String BASE_URL = "https://api.openweathermap.org/data/2.5/weather?q=";
 
-    static public JSONObject weatherGetter(){
-        String city = CityAsker.askCity();
+    static public JSONObject weatherGetter(String city){
         StringBuilder sb = new StringBuilder();
         try {
             URL url = new URL(BASE_URL + city + Api);
