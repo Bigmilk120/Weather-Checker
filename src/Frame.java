@@ -33,10 +33,19 @@ class Frame extends JFrame {
             temperature.setPreferredSize(new Dimension(500,50));
             weather.setPreferredSize(new Dimension(500,50));
 
+            JButton details = new JButton("Details");
+            details.setPreferredSize(new Dimension(100,25));
+
+            details.addActionListener(d ->{
+                new DetailsFrame();
+            });
+
             city.setVisible(false);
             confirm_city.setVisible(false);
+
             container.add(temperature);
             container.add(weather);
+            container.add(details);
         });
 
         setVisible(true);
