@@ -37,7 +37,7 @@ class Frame extends JFrame {
             details.setPreferredSize(new Dimension(100,25));
 
             details.addActionListener(d ->{
-                new DetailsFrame();
+                new DetailsFrame(data);
             });
 
             city.setVisible(false);
