@@ -5,8 +5,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Frame extends JFrame {
-    public Frame(){
+class Frame extends JFrame {
+    Frame(){
         super("Weather Checker");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(600,400);
@@ -17,28 +17,26 @@ public class Frame extends JFrame {
 
 
         JTextField city = new JTextField();
-        city.setPreferredSize(new Dimension(500,50));
+        city.setPreferredSize(new Dimension(500,25));
 
         JButton confirm_city = new JButton("Confirm");
-        confirm_city.setPreferredSize(new Dimension(100,50));
+        confirm_city.setPreferredSize(new Dimension(100,25));
 
         container.add(city);
         container.add(confirm_city);
-        confirm_city.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JSONObject data = OutputGiver.getData(city.getText());
-                JSONObject description = OutputGiver.getDescription(city.getText());
-                city.setVisible(false);
-                confirm_city.setVisible(false);
-                JLabel temperature = new JLabel(OutputGiver.giveTemperature(data,description));
-                JLabel weather = new JLabel(OutputGiver.giveWeather(data,description));
-                temperature.setPreferredSize(new Dimension(500,100));
-                weather.setPreferredSize(new Dimension(500,100));
+        confirm_city.addActionListener(e -> {
+            JSONObject data = OutputGiver.getData(city.getText());
+            JSONObject description = OutputGiver.getDescription(city.getText());
 
-                container.add(temperature);
-                container.add(weather);
-            }
+            JLabel temperature = new JLabel(OutputGiver.giveTemperature(data));
+            JLabel weather = new JLabel(OutputGiver.giveWeather(description));
+            temperature.setPreferredSize(new Dimension(500,50));
+            weather.setPreferredSize(new Dimension(500,50));
+
+            city.setVisible(false);
+            confirm_city.setVisible(false);
+            container.add(temperature);
+            container.add(weather);
         });
 
         setVisible(true);

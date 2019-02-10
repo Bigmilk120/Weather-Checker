@@ -5,11 +5,12 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class WeatherConnection {
-    public static String Api = "&appid=96f92938c8efe61afd7512b9e21d37ce&units=metric ";
-    public static String BASE_URL = "https://api.openweathermap.org/data/2.5/weather?q=";
+@SuppressWarnings("ThrowablePrintedToSystemOut")
+class WeatherConnection {
+    private static final String Api = "&appid=96f92938c8efe61afd7512b9e21d37ce&units=metric ";
+    private static final String BASE_URL = "https://api.openweathermap.org/data/2.5/weather?q=";
 
-    static public JSONObject weatherGetter(String city){
+    static JSONObject weatherGetter(String city){
         StringBuilder sb = new StringBuilder();
         try {
             URL url = new URL(BASE_URL + city + Api);
@@ -31,13 +32,11 @@ public class WeatherConnection {
             while ((line = br.readLine()) != null) {
                 sb.append(line);
             }
-            JSONObject json = new JSONObject(sb.toString());
 
-            return json;
+            return new JSONObject(sb.toString());
         }catch(Exception ex) {
             System.out.println(ex);
-            JSONObject json = new JSONObject();
-            return json;
+            return new JSONObject();
         }
     }
 }

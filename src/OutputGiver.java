@@ -1,23 +1,21 @@
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-public class OutputGiver {
-    final static String DEGREE  = "\u00b0";
-    public static String giveTemperature(JSONObject data, JSONObject description){
+class OutputGiver {
+    private final static String DEGREE  = "\u00b0";
+    static String giveTemperature(JSONObject data){
         return "Temperature at this moment: "+data.getLong("temp")+DEGREE+"C";
     }
-    public static String giveWeather(JSONObject data, JSONObject description){
+    static String giveWeather(JSONObject description){
         return "Weather today: "+description.getString("description");
     }
-    public static JSONObject getData(String city){
+    static JSONObject getData(String city){
         JSONObject json = WeatherConnection.weatherGetter(city);
-        JSONObject data = json.getJSONObject("main");
-        return data;
+        return json.getJSONObject("main");
     }
-    public static JSONObject getDescription(String city){
+    static JSONObject getDescription(String city){
         JSONObject json = WeatherConnection.weatherGetter(city);
         JSONArray weather = json.getJSONArray("weather");
-        JSONObject description = weather.getJSONObject(0);
-        return description;
+        return weather.getJSONObject(0);
     }
 }
