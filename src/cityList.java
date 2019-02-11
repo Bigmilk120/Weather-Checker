@@ -13,7 +13,8 @@ public class cityList {
             Scanner sc = new Scanner(file);
             while (sc.hasNextLine()) {
                 String cityName = sc.nextLine();
-                city.add(cityName);
+                if(!cityName.isEmpty())
+                    city.add(cityName);
             }
         }catch(Exception ex){
             System.out.println(ex);
