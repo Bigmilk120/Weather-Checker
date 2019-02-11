@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 class Frame extends JFrame {
     Frame(){
@@ -18,6 +19,16 @@ class Frame extends JFrame {
 
         JTextField city = new JTextField();
         city.setPreferredSize(new Dimension(500,25));
+
+        AutoSuggestor autoSuggestor = new AutoSuggestor(city, this, null, Color.WHITE.brighter(), Color.BLUE, Color.RED, 0.75f) {
+            @Override
+            boolean wordTyped(String typedWord) {
+                ArrayList<String> words =cityList.getList();
+                setDictionary(words);
+                return super.wordTyped(typedWord);
+            }
+        };
+
 
         JButton confirm_city = new JButton("Confirm");
         confirm_city.setPreferredSize(new Dimension(100,25));
