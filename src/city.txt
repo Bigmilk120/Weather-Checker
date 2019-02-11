@@ -1,41 +1,41 @@
 Bardo
 Bielawa
-Bierutow
+Bierutów
 Bogatynia
-Boguszow-Gorce
+Boguszów-Gorce
 Boleslawiec
-Bolkow
+Bolków
 Brzeg Dolny
 Bystrzyca Klodzka
-Chocianow
-Chojnow
-Duszniki Zdroj
-Dzierzoniow
-Glogow
+Chocianów
+Chojnów
+Duszniki Zdrój
+Dzierzoniów
+Glogów
 Gluszyca
-Gora
-Gryfow Slaski
+Góra
+Gryfów Slaski
 Jawor
 Jaworzyna Slaska
-Jedlina Zdroj
+Jedlina Zdrój
 Jelcz-Laskowice
-Jelenia Gora
-Kamienna Gora
+Jelenia Góra
+Kamienna Góra
 Karpacz
 Katy Wroclawskie
 Klodzko
 Kowary
-Kudowa Zdroj
-Ladek Zdroj
+Kudowa Zdrój
+Ladek Zdrój
 Legnica
 Lesna
 Luban
 Lubawka
 Lubin
 Lubomierz
-Lwowek Slaski
-Mieroszow
-Miedzyborz
+Lwówek Slaski
+Mieroszów
+Miedzybórz
 Miedzylesie
 Milicz
 Mirsk
@@ -48,47 +48,47 @@ Olawa
 Piechowice
 Piensk
 Pieszyce
-Pilawa Gorna
-Polanica Zdroj
+Pilawa Górna
+Polanica Zdrój
 Polkowice
 Prochowice
 Prusice
-Przemkow
-Radkow
+Przemków
+Radków
 Siechnice
-Sobotka
+Sobótka
 Stronie Slaskie
 Strzegom
 Strzelin
-Sycow
-Szczawno Zdroj
+Syców
+Szczawno Zdrój
 Szczytna
 Szklarska Poreba
 Scinawa
 Sroda Slaska
 Swidnica
 Swiebodzice
-Swieradow Zdroj
+Swieradów Zdrój
 Swierzawa
 Trzebnica
-Twardogora
+Twardogóra
 Walbrzych
 Wasosz
 Wegliniec
-Wiazow
+Wiazów
 Wlen
-Wojcieszow
-Wolow
+Wojcieszów
+Wolów
 Wroclaw
-Zawidow
+Zawidów
 Zabkowice Slaskie
 Zgorzelec
 Ziebice
 Zlotoryja
 Zloty Stok
-Zarow
-Zmigrod
-Aleksandrow Kujawski
+Zarów
+Zmigród
+Aleksandrów Kujawski
 Barcin
 Brodnica
 Brzesc Kujawski
@@ -100,7 +100,7 @@ Ciechocinek
 Dobrzyn nad Wisla
 Gniewkowo
 Golub-Dobrzyn
-Gorzno
+Górzno
 Grudziadz
 Inowroclaw
 Izbica Kujawska
@@ -124,11 +124,11 @@ Naklo nad Notecia
 Nieszawa
 Nowe
 Pakosc
-Piotrkow Kujawski
-Radziejow
+Piotrków Kujawski
+Radziejów
 Radzyn Chelminski
 Rypin
-Sepolno Krajenskie
+Sepólno Krajenskie
 Skepe
 Solec Kujawski
 Strzelno
@@ -148,22 +148,22 @@ Bychawa
 Chelm
 Deblin
 Frampol
-Hrubieszow
-Janow Lubelski
-Jozefow
+Hrubieszów
+Janów Lubelski
+Józefów
 Kazimierz Dolny
 Kock
-Krasnobrod
+Krasnobród
 Krasnystaw
 Krasnik
-Lubartow
+Lubartów
 Lublin
 Leczna
-Lukow
+Luków
 Miedzyrzec Podlaski
-Naleczow
+Naleczów
 Opole Lubelskie
-Ostrow Lubelski
+Ostrów Lubelski
 Parczew
 Piaski
 Poniatowa
@@ -174,9 +174,9 @@ Ryki
 Stoczek Lukowski
 Szczebrzeszyn
 Swidnik
-Tarnogrod
+Tarnogród
 Terespol
-Tomaszow Lubelski
+Tomaszów Lubelski
 Wlodawa
 Zamosc
 Zwierzyniec
@@ -189,30 +189,30 @@ Cybinka
 Czerwiensk
 Dobiegniew
 Drezdenko
-Gorzow Wielkopolski
+Gorzów Wielkopolski
 Gozdnica
 Gubin
 Ilowa
 Jasien
 Kargowa
 Kostrzyn
-Kozuchow
+Kozuchów
 Krosno Odrzanskie
 Lubniewice
 Lubsko
 Leknica
 Malomice
 Miedzyrzecz
-Nowa Sol
+Nowa Sól
 Nowe Miasteczko
-Nowogrod Bobrzanski
+Nowogród Bobrzanski
 Osno Lubuskie
 Rzepin
 Skwierzyna
 Slawa
 Slubice
 Strzelce Krajenskie
-Sulechow
+Sulechów
 Sulecin
 Szlichtyngowa
 Szprotawa
@@ -222,11 +222,11 @@ Trzciel
 Witnica
 Wschowa
 Zbaszynek
-Zielona Gora
+Zielona Góra
 Zagan
 Zary
-Aleksandrow Lodzki
-Belchatow
+Aleksandrów Lódzki
+Belchatów
 Biala Rawska
 Blaszki
 Brzeziny
@@ -235,63 +235,63 @@ Dzialoszyn
 Glowno
 Kamiensk
 Koluszki
-Konstantynow Lodzki
+Konstantynów Lódzki
 Krosniewice
 Kutno
 Lask
 Leczyca
 Lowicz
-Lodz
+Lódz
 Opoczno
-Ozorkow
+Ozorków
 Pabianice
 Pajeczno
-Piotrkow Trybunalski
+Piotrków Trybunalski
 Poddebice
-Przedborz
+Przedbórz
 Radomsko
 Rawa Mazowiecka
 Sieradz
 Skierniewice
-Strykow
-Sulejow
+Stryków
+Sulejów
 Szadek
-Tomaszow Mazowiecki
+Tomaszów Mazowiecki
 Tuszyn
-Uniejow
+Uniejów
 Warta
 Wielun
-Wieruszow
+Wieruszów
 Zdunska Wola
-Zelow
+Zelów
 Zgierz
 Zloczew
 Zychlin
 Alwernia
-Andrychow
+Andrychów
 Biecz
 Bochnia
 Brzesko
 Brzeszcze
 Bukowno
 Chelmek
-Chrzanow
+Chrzanów
 Ciezkowice
-Czchow
+Czchów
 Dabrowa Tarnowska
 Dobczyce
 Gorlice
-Grybow
-Jordanow
+Grybów
+Jordanów
 Kalwaria Zebrzydowska
 Kety
-Krakow
+Kraków
 Krynica
 Krzeszowice
 Libiaz
 Limanowa
-Makow Podhalanski
-Miechow
+Maków Podhalanski
+Miechów
 Mszana Dolna
 Muszyna
 Myslenice
@@ -301,21 +301,21 @@ Nowy Targ
 Nowy Wisnicz
 Olkusz
 Oswiecim
-Piwniczna Zdroj
+Piwniczna Zdrój
 Proszowice
 Rabka
 Skala
 Skawina
-Slawkow
+Slawków
 Slomniki
 Stary Sacz
 Sucha Beskidzka
 Sulkowice
 Szczawnica
-Swiatniki Gorne
-Tarnow
+Swiatniki Górne
+Tarnów
 Trzebinia
-Tuchow
+Tuchów
 Wadowice
 Wieliczka
 Wolbrom
@@ -326,113 +326,113 @@ Bialobrzegi
 Biezun
 Blonie
 Brok
-Brwinow
+Brwinów
 Chorzele
-Ciechanow
+Ciechanów
 Drobin
 Garwolin
 Gabin
 Glinojeck
 Gostynin
-Gora Kalwaria
+Góra Kalwaria
 Grodzisk Mazowiecki
-Grojec
+Grójec
 Ilza
-Jozefow
+Józefów
 Kaluszyn
 Karczew
 Kobylka
 Konstancin-Jeziorna
-Kosow Lacki
+Kosów Lacki
 Kozienice
 Legionowo
 Lipsko
 Laskarzew
-Lochow
+Lochów
 Lomianki
 Losice
-Makow Mazowiecki
+Maków Mazowiecki
 Marki
-Milanowek
+Milanówek
 Minsk Mazowiecki
 Mlawa
 Mogielnica
 Mordy
-Mszczonow
+Mszczonów
 Myszyniec
 Nasielsk
 Nowe Miasto nad Pilica
-Nowy Dwor Mazowiecki
+Nowy Dwór Mazowiecki
 Ostroleka
-Ostrow Mazowiecka
+Ostrów Mazowiecka
 Otwock
-Ozarow Mazowiecki
+Ozarów Mazowiecki
 Piaseczno
-Piastow
+Piastów
 Pilawa
 Pionki
 Plock
 Plonsk
 Podkowa Lesna
-Pruszkow
+Pruszków
 Przasnysz
 Przysucha
 Pultusk
 Raciaz
 Radom
 Radzymin
-Rozan
+Rózan
 Serock
 Siedlce
 Sierpc
 Skaryszew
 Sochaczew
-Sokolow Podlaski
-Sulejowek
+Sokolów Podlaski
+Sulejówek
 Szydlowiec
 Tluszcz
 Warka
 Warszawa
 Wesola
-Wegrow
+Wegrów
 Wolomin
-Wyszkow
-Wyszogrod
+Wyszków
+Wyszogród
 Wysmierzyce
 Zakroczym
 Zabki
 Zielonka
 Zwolen
-Zelechow
+Zelechów
 Zuromin
-Zyrardow
-Baborow
+Zyrardów
+Baborów
 Biala
 Brzeg
 Byczyna
 Dobrodzien
-Glogowek
+Glogówek
 Glubczyce
 Glucholazy
 Gogolin
-Gorzow Slaski
-Grodkow
+Gorzów Slaski
+Grodków
 Kedzierzyn-Kozle
 Kietrz
 Kluczbork
 Kolonowskie
-Korfantow
+Korfantów
 Krapkowice
 Lesnica
 Lewin Brzeski
-Namyslow
+Namyslów
 Niemodlin
 Nysa
 Olesno
 Opole
-Otmuchow
+Otmuchów
 Ozimek
-Paczkow
+Paczków
 Praszka
 Prudnik
 Strzelce Opolskie
@@ -440,15 +440,15 @@ Ujazd
 Wolczyn
 Zawadzkie
 Zdzieszowice
-Baranow Sandomierski
+Baranów Sandomierski
 Blazowa
-Brzozow
-Cieszanow
+Brzozów
+Cieszanów
 Debica
 Dukla
-Dynow
-Glogow Malopolski
-Iwonicz Zdroj
+Dynów
+Glogów Malopolski
+Iwonicz Zdrój
 Jaroslaw
 Jaslo
 Jedlicze
@@ -457,7 +457,7 @@ Kolbuszowa
 Krosno
 Lesko
 Lezajsk
-Lubaczow
+Lubaczów
 Lancut
 Mielec
 Narol
@@ -472,20 +472,20 @@ Radomysl Wielki
 Radymno
 Ropczyce
 Rudnik nad Sanem
-Rymanow
-Rzeszow
+Rymanów
+Rzeszów
 Sanok
-Sedziszow Malopolski
+Sedziszów Malopolski
 Sieniawa
-Sokolow Malopolski
+Sokolów Malopolski
 Stalowa Wola
-Strzyzow
+Strzyzów
 Tarnobrzeg
 Tyczyn
-Ulanow
+Ulanów
 Ustrzyki Dolne
-Zagorz
-Augustow
+Zagórz
+Augustów
 Bialystok
 Bielsk Podlaski
 Bransk
@@ -496,7 +496,7 @@ Dabrowa Bialostocka
 Drohiczyn
 Goniadz
 Grajewo
-Hajnowka
+Hajnówka
 Jedwabne
 Kleszczele
 Knyszyn
@@ -505,11 +505,11 @@ Lipsk
 Lapy
 Lomza
 Monki
-Nowogrod
-Rajgrod
+Nowogród
+Rajgród
 Sejny
 Siemiatycze
-Sokolka
+Sokólka
 Stawiski
 Suchowola
 Suprasl
@@ -517,17 +517,17 @@ Suraz
 Suwalki
 Szczuczyn
 Tykocin
-Wasilkow
+Wasilków
 Wysokie Mazowieckie
-Zabludow
-Zambrow
+Zabludów
+Zambrów
 Brusy
-Bytow
+Bytów
 Chojnice
 Czarna Woda
 Czarne
 Czersk
-Czluchow
+Czluchów
 Debrzno
 Dzierzgon
 Gdansk
@@ -543,7 +543,7 @@ Lebork
 Leba
 Malbork
 Miastko
-Nowy Dwor Gdanski
+Nowy Dwór Gdanski
 Nowy Staw
 Pelplin
 Prabuty
@@ -552,7 +552,7 @@ Puck
 Reda
 Rumia
 Skarszewy
-Skorcz
+Skórcz
 Slupsk
 Sopot
 Starogard Gdanski
@@ -567,57 +567,57 @@ Bielsko-Biala
 Bierun
 Blachownia
 Bytom
-Chorzow
+Chorzów
 Cieszyn
 Czechowice-Dziedzice
 Czeladz
 Czerwionka-Leszczyny
 Czestochowa
-Dabrowa Gornicza
+Dabrowa Górnicza
 Gliwice
 Imielin
-Jastrzebie Zdroj
+Jastrzebie Zdrój
 Jaworzno
 Kalety
 Katowice
 Klobuck
-Knurow
+Knurów
 Koniecpol
 Kozieglowy
 Krzepice
 Kuznia Raciborska
 Ledziny
 Lubliniec
-Laziska Gorne
+Laziska Górne
 Lazy
 Miasteczko Slaskie
-Mikolow
+Mikolów
 Myslowice
-Myszkow
+Myszków
 Ogrodzieniec
 Orzesze
 Piekary Slaskie
 Pilica
 Poreba
 Pszczyna
-Pszow
+Pszów
 Pyskowice
-Raciborz
+Racibórz
 Radlin
-Radzionkow
+Radzionków
 Ruda Slaska
 Rybnik
 Rydultowy
 Siemianowice Slaskie
 Siewierz
-Skoczow
+Skoczów
 Sosnowiec
 Sosnicowice
 Strumien
 Szczekociny
 Szczyrk
 Swietochlowice
-Tarnowskie Gory
+Tarnowskie Góry
 Toszek
 Tychy
 Ustron
@@ -634,7 +634,7 @@ Zywiec
 Barlinek
 Barwice
 Bialogard
-Bialy Bor
+Bialy Bór
 Bobolice
 Borne Sulinowo
 Cedynia
@@ -650,7 +650,7 @@ Dobrzany
 Drawno
 Drawsko Pomorskie
 Golczewo
-Goleniow
+Goleniów
 Gryfice
 Gryfino
 Insko
@@ -667,18 +667,18 @@ Mieszkowice
 Miedzyzdroje
 Miroslawiec
 Moryn
-Mysliborz
+Myslibórz
 Nowe Warpno
 Nowogard
 Pelczyce
 Ploty
-Polanow
+Polanów
 Police
-Polczyn Zdroj
+Polczyn Zdrój
 Pyrzyce
 Recz
 Resko
-Sianow
+Sianów
 Slawno
 Stargard Szczecinski
 Suchan
@@ -686,8 +686,8 @@ Szczecin
 Szczecinek
 Swidwin
 Swinoujscie
-Trzcinsko Zdroj
-Trzebiatow
+Trzcinsko Zdrój
+Trzebiatów
 Tuczno
 Walcz
 Wegorzyno
@@ -697,7 +697,7 @@ Bojanowo
 Borek Wielkopolski
 Buk
 Chodziez
-Czarnkow
+Czarnków
 Czempin
 Czerniejewo
 Dabie
@@ -707,7 +707,7 @@ Gniezno
 Golina
 Golancz
 Gostyn
-Grabow nad Prosna
+Grabów nad Prosna
 Grodzisk Wielkopolski
 Jarocin
 Jastrowie
@@ -723,7 +723,7 @@ Konin
 Kostrzyn
 Koscian
 Kozmin Wielkopolski
-Kornik
+Kórnik
 Krajenka
 Krobia
 Krotoszyn
@@ -732,11 +732,11 @@ Krzyz Wielkopolski
 Ksiaz Wielkopolski
 Leszno
 Lubon
-Lwowek
+Lwówek
 Lobzenica
 Margonin
-Miejska Gorka
-Miedzychod
+Miejska Górka
+Miedzychód
 Mikstat
 Miloslaw
 Mosina
@@ -746,13 +746,13 @@ Nowe Skalmierzyce
 Nowy Tomysl
 Oborniki
 Obrzycko
-Odolanow
+Odolanów
 Okonek
 Opalenica
 Osieczna
-Ostrorog
-Ostrow Wielkopolski
-Ostrzeszow
+Ostroróg
+Ostrów Wielkopolski
+Ostrzeszów
 Pila
 Pleszew
 Pniewy
@@ -764,12 +764,12 @@ Przedecz
 Puszczykowo
 Pyzdry
 Rakoniewice
-Raszkow
+Raszków
 Rawicz
 Rogozno
 Rychwal
 Rydzyna
-Sierakow
+Sieraków
 Skoki
 Slupca
 Sompolno
@@ -785,7 +785,7 @@ Srem
 Sroda Wielkopolska
 Trzcianka
 Trzemeszno
-Tuliszkow
+Tuliszków
 Turek
 Ujscie
 Wagrowiec
@@ -797,11 +797,11 @@ Wronki
 Wrzesnia
 Wyrzysk
 Wysoka
-Zagorow
+Zagórów
 Zbaszyn
 Zduny
-Zlotow
-Zerkow
+Zlotów
+Zerków
 Barczewo
 Bartoszyce
 Biala Piska
@@ -815,7 +815,7 @@ Elk
 Frombork
 Gizycko
 Goldap
-Gorowo Ilaweckie
+Górowo Ilaweckie
 Ilawa
 Jeziorany
 Ketrzyn
@@ -837,7 +837,7 @@ Olsztyn
 Olsztynek
 Orneta
 Orzysz
-Ostroda
+Ostróda
 Paslek
 Pasym
 Pieniezno
@@ -852,31 +852,31 @@ Tolkmicko
 Wegorzewo
 Zalewo
 Bodzentyn
-Busko Zdroj
+Busko Zdrój
 Checiny
 Chmielnik
-Cmielow
+Cmielów
 Dzialoszyce
-Jedrzejow
+Jedrzejów
 Kazimierza Wielka
 Kielce
 Konskie
-Kunow
+Kunów
 Malogoszcz
-Opatow
+Opatów
 Osiek
 Ostrowiec Swietokrzyski
-Ozarow
-Pinczow
+Ozarów
+Pinczów
 Polaniec
 Sandomierz
-Sedziszow
+Sedziszów
 Skalbmierz
 Skarzysko-Kamienna
 Starachowice
-Staszow
-Staporkow
-Suchedniow
+Staszów
+Staporków
+Suchedniów
 Wachock
 Wloszczowa
 Zawichost

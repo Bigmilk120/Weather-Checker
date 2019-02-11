@@ -15,14 +15,14 @@ class Frame extends JFrame {
         Container container = getContentPane();
         container.setLayout(new FlowLayout());
         setLayout(new FlowLayout());
-        ArrayList<String> words =cityList.getList();
 
         JTextField city = new JTextField();
         city.setPreferredSize(new Dimension(500,25));
-
+        ArrayList<String> words =cityList.getList();
         AutoSuggestor autoSuggestor = new AutoSuggestor(city, this, null, Color.WHITE.brighter(), Color.BLUE, Color.RED, 0.75f) {
             @Override
             boolean wordTyped(String typedWord) {
+
 
                 setDictionary(words);
                 return super.wordTyped(typedWord);

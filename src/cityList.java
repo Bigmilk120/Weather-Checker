@@ -1,4 +1,6 @@
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.util.*;
 
 
@@ -8,23 +10,17 @@ public class cityList {
         String filename = "city.txt";
         File file = new File(filename);
         try {
-            Scanner s = new Scanner(file);
-            System.out.println(s.nextLine());
-            while (s.hasNext()){
-                String temp = s.nextLine();
-                city.add(temp);
-                System.out.println(temp);
+            Scanner sc = new Scanner(file);
+            while (sc.hasNextLine()) {
+                String cityName = sc.nextLine();
+                city.add(cityName);
             }
-            s.close();
         }catch(Exception ex){
             System.out.println(ex);
         }
 
-
-
-        city.add("Kraków");
-        city.add("Warszawa");
-        city.add("Katowice");
+        System.out.println(Arrays.toString(city.toArray()));
+        city.remove(city.size()-1);
         return city;
     }
 }
