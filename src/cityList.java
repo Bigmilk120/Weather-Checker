@@ -19,9 +19,6 @@ public class cityList {
         }catch(Exception ex){
             System.out.println(ex);
         }
-
-        System.out.println(Arrays.toString(city.toArray()));
-        city.remove(city.size()-1);
         return city;
     }
 }
