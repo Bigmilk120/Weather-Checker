@@ -3,18 +3,14 @@ import org.json.JSONObject;
 import javax.swing.*;
 import java.awt.*;
 
-public class DetailsFrame extends JFrame {
+public class DetailsFrame extends JPanel {
     private final static String DEGREE  = "\u00b0";
     DetailsFrame(JSONObject data){
-        super("Weather Checker");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(600,500);
-        setLocation(100,100);
+
+        setPreferredSize(new Dimension(600,400));
         JLabel jlb = new JLabel();
         jlb.setIcon(new ImageIcon(getClass().getResource("rain.jpg")));
-
-        Container container = getContentPane();
-        container.setLayout(new FlowLayout());
+        setLayout(new FlowLayout());
 
 
         JLabel temperature = new JLabel("Today's temperature is: "+DetailedInfo.getTemperature(data)+DEGREE+"C");
@@ -28,12 +24,12 @@ public class DetailsFrame extends JFrame {
         JLabel pressure = new JLabel("Pressure: "+DetailedInfo.getPressure(data)+"hPa");
         pressure.setPreferredSize(new Dimension(250,25));
 
-        container.add(temperature);
-        container.add(minTemperature);
-        container.add(maxTemperature);
-        container.add(humidity);
-        container.add(pressure);
-        container.add(jlb);
+        add(temperature);
+        add(minTemperature);
+        add(maxTemperature);
+        add(humidity);
+        add(pressure);
+        add(jlb);
 
         setVisible(true);
     }
