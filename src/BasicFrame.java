@@ -35,7 +35,7 @@ public class BasicFrame extends JPanel{
         });
         goBack.addActionListener(g ->{
             setVisible(false);
-            add(new AskPanel());
+            add(new AskPanel((JFrame)this.getTopLevelAncestor()));
         });
     }
 }
