@@ -8,15 +8,14 @@ public class DetailsFrame extends JPanel {
     DetailsFrame(JSONObject data, JSONObject description){
         setLayout(new FlowLayout());
         setPreferredSize(new Dimension(600,600));
-        JLabel jlb = new JLabel();
-        jlb.setIcon(new ImageIcon(getClass().getResource("rain.jpg")));
-
-
 
         JLabel temperature = new JLabel(OutputGiver.giveTemperature(data));
         JLabel weather = new JLabel(OutputGiver.giveWeather(description));
         temperature.setPreferredSize(new Dimension(500,25));
         weather.setPreferredSize(new Dimension(500,25));
+
+        JLabel jlb = new JLabel();
+        jlb.setIcon(new ImageIcon(getClass().getResource("rain.jpg")));
 
         JButton details = new JButton("Details");
         details.setPreferredSize(new Dimension(100,25));
