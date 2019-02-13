@@ -3,14 +3,13 @@ import java.awt.*;
 import java.util.ArrayList;
 
 class Frame extends JFrame {
-    private final static String DEGREE  = "\u00b0";
     Frame(){
         super("Weather Checker");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(600,600);
-        setLocation(50,50);
-        add(new AskPanel(this));
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setSize(600,600);
+        this.setLocation(0,0);
+        this.add(new AskPanel(this));
 
-        setVisible(true);
+        this.setVisible(true);
     }
 }

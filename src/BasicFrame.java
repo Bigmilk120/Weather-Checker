@@ -6,7 +6,7 @@ import java.awt.*;
 public class BasicFrame extends JPanel{
     private final static String DEGREE  = "\u00b0";
     BasicFrame(JTextField city){
-        setPreferredSize(new Dimension(600,400));
+        setPreferredSize(new Dimension(600,600));
         setLayout(new FlowLayout());
 
 
@@ -29,13 +29,17 @@ public class BasicFrame extends JPanel{
         add(details);
         add(goBack);
         details.addActionListener(d ->{
-            add(new DetailsFrame(data));
+            temperature.setVisible(false);
+            weather.setVisible(false);
             details.setVisible(false);
-            setVisible(true);
+            goBack.setVisible(false);
+            add(new DetailsFrame(data, description));
         });
         goBack.addActionListener(g ->{
             setVisible(false);
-            add(new AskPanel((JFrame)this.getTopLevelAncestor()));
+            //add(new AskPanel((JFrame) SwingUtilities.getWindowAncestor(this)));
+            new Frame();
+
         });
     }
 }

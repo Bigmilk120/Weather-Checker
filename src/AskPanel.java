@@ -1,3 +1,5 @@
+import org.json.JSONObject;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
@@ -5,7 +7,6 @@ import java.util.ArrayList;
 public class AskPanel extends JPanel {
     AskPanel(JFrame frame){
 
-        setLayout(new FlowLayout());
         setLayout(new FlowLayout());
 
         JTextField city = new JTextField();
@@ -24,9 +25,11 @@ public class AskPanel extends JPanel {
         add(city);
         add(confirm_city);
         confirm_city.addActionListener(e -> {
-            add(new BasicFrame(city));
-            city.setVisible(false);
-            confirm_city.setVisible(false);
+            if(OutputGiver.getData(city.getText()).length()!=0){
+                add(new BasicFrame(city));
+                city.setVisible(false);
+                confirm_city.setVisible(false);
+            }
         });
     }
 }
