@@ -3,7 +3,7 @@ import org.json.JSONObject;
 import javax.swing.*;
 import java.awt.*;
 
-public class DetailsFrame extends JPanel {
+class DetailsFrame extends JPanel {
     private final static String DEGREE  = "\u00b0";
     DetailsFrame(JSONObject data, JSONObject description){
         setLayout(new FlowLayout());
@@ -22,8 +22,6 @@ public class DetailsFrame extends JPanel {
         goBack.setPreferredSize(new Dimension(100,25));
 
 
-        JLabel temperature_detailed = new JLabel("Today's temperature is: "+DetailedInfo.getTemperature(data)+DEGREE+"C");
-        temperature.setPreferredSize(new Dimension(500,25));
         JLabel minTemperature = new JLabel("The lowest temperature in the city: "+DetailedInfo.getMinTemperature(data)+DEGREE+"C");
         minTemperature.setPreferredSize(new Dimension(500,25));
         JLabel maxTemperature = new JLabel("The highest temperature in the city: "+DetailedInfo.getMaxTemperature(data)+DEGREE+"C");

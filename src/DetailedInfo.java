@@ -1,9 +1,6 @@
 import org.json.JSONObject;
 
-public class DetailedInfo {
-    static public String getTemperature(JSONObject data){
-        return String.valueOf(data.getLong("temp"));
-    }
+class DetailedInfo {
     static public String getMinTemperature(JSONObject data){
         return String.valueOf(data.getLong("temp_min"));
     }

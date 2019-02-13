@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 
-public class AskPanel extends JPanel {
+class AskPanel extends JPanel {
     AskPanel(JFrame frame){
 
         setLayout(new FlowLayout());
@@ -37,7 +37,7 @@ public class AskPanel extends JPanel {
                 enter.setVisible(false);
                 city.setVisible(false);
                 confirm_city.setVisible(false);
-            }catch(Exception ex){}
+            }catch(Exception ignored){}
         });
     }
 }

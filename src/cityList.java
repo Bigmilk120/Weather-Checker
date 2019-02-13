@@ -1,10 +1,8 @@
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
 import java.util.*;
 
 
-public class cityList {
+class cityList {
     public static ArrayList<String> getList() {
         ArrayList<String> city = new ArrayList<>();
         String filename = "city.txt";
@@ -16,8 +14,7 @@ public class cityList {
                 if(!cityName.isEmpty())
                     city.add(cityName);
             }
-        }catch(Exception ex){
-            System.out.println(ex);
+        }catch(Exception ignored){
         }
         return city;
     }

@@ -3,8 +3,7 @@ import org.json.JSONObject;
 import javax.swing.*;
 import java.awt.*;
 
-public class BasicFrame extends JPanel{
-    private final static String DEGREE  = "\u00b0";
+class BasicFrame extends JPanel{
     BasicFrame(JTextField city){
         setPreferredSize(new Dimension(600,600));
         setLayout(new FlowLayout());

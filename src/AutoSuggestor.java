@@ -13,27 +13,11 @@ class AutoSuggestor {
 
     private final JTextField textField;
     private final Window container;
-    private JPanel suggestionsPanel;
-    private JWindow autoSuggestionPopUpWindow;
+    private final JPanel suggestionsPanel;
+    private final JWindow autoSuggestionPopUpWindow;
     private String typedWord;
     private final ArrayList<String> dictionary = new ArrayList<>();
     private int currentIndexOfSpace, tW, tH;
-    private DocumentListener documentListener = new DocumentListener() {
-        @Override
-        public void insertUpdate(DocumentEvent de) {
-            checkForAndShowSuggestions();
-        }
-
-        @Override
-        public void removeUpdate(DocumentEvent de) {
-            checkForAndShowSuggestions();
-        }
-
-        @Override
-        public void changedUpdate(DocumentEvent de) {
-            checkForAndShowSuggestions();
-        }
-    };
     private final Color suggestionsTextColor;
     private final Color suggestionFocusedColor;
 
@@ -42,6 +26,22 @@ class AutoSuggestor {
         this.suggestionsTextColor = textColor;
         this.container = mainWindow;
         this.suggestionFocusedColor = suggestionFocusedColor;
+        DocumentListener documentListener = new DocumentListener() {
+            @Override
+            public void insertUpdate(DocumentEvent de) {
+                checkForAndShowSuggestions();
+            }
+
+            @Override
+            public void removeUpdate(DocumentEvent de) {
+                checkForAndShowSuggestions();
+            }
+
+            @Override
+            public void changedUpdate(DocumentEvent de) {
+                checkForAndShowSuggestions();
+            }
+        };
         this.textField.getDocument().addDocumentListener(documentListener);
 
         setDictionary(words);
@@ -104,15 +104,13 @@ class AutoSuggestor {
                                 lastFocusableIndex = i;
                             }
                         } else if (lastFocusableIndex <= i) {
-                            if (i < max) {
-                                sl.setFocused(true);
-                                autoSuggestionPopUpWindow.toFront();
-                                autoSuggestionPopUpWindow.requestFocusInWindow();
-                                suggestionsPanel.requestFocusInWindow();
-                                suggestionsPanel.getComponent(i).requestFocusInWindow();
-                                lastFocusableIndex = i;
-                                break;
-                            }
+                            sl.setFocused(true);
+                            autoSuggestionPopUpWindow.toFront();
+                            autoSuggestionPopUpWindow.requestFocusInWindow();
+                            suggestionsPanel.requestFocusInWindow();
+                            suggestionsPanel.getComponent(i).requestFocusInWindow();
+                            lastFocusableIndex = i;
+                            break;
                         }
                     }
                 } else {//only a single suggestion was given
@@ -130,7 +128,7 @@ class AutoSuggestor {
         textField.requestFocusInWindow();
     }
 
-    public ArrayList<SuggestionLabel> getAddedSuggestionLabels() {
+    private ArrayList<SuggestionLabel> getAddedSuggestionLabels() {
         ArrayList<SuggestionLabel> sls = new ArrayList<>();
         for (int i = 0; i < suggestionsPanel.getComponentCount(); i++) {
             if (suggestionsPanel.getComponent(i) instanceof SuggestionLabel) {
@@ -162,7 +160,7 @@ class AutoSuggestor {
         }
     }
 
-    protected void addWordToSuggestions(String word) {
+    private void addWordToSuggestions(String word) {
         SuggestionLabel suggestionLabel = new SuggestionLabel(word, suggestionFocusedColor, suggestionsTextColor, this);
 
         calculatePopUpWindowSize(suggestionLabel);
@@ -199,8 +197,8 @@ class AutoSuggestor {
         autoSuggestionPopUpWindow.setSize(tW, tH);
         autoSuggestionPopUpWindow.setVisible(true);
 
-        int windowX = 0;
-        int windowY = 0;
+        int windowX;
+        int windowY;
 
         windowX = container.getX() + textField.getX() + 5;
         if (suggestionsPanel.getHeight() > autoSuggestionPopUpWindow.getMinimumSize().height) {
@@ -221,9 +219,7 @@ class AutoSuggestor {
         if (words == null) {
             return;//so we can call constructor with null value for dictionary without exception thrown
         }
-        for (String word : words) {
-            dictionary.add(word);
-        }
+        dictionary.addAll(words);
     }
 
     public JWindow getAutoSuggestionPopUpWindow() {
@@ -274,7 +270,8 @@ class SuggestionLabel extends JLabel {
     private final JWindow autoSuggestionsPopUpWindow;
     private final JTextField textField;
     private final AutoSuggestor autoSuggestor;
-    private Color suggestionsTextColor, suggestionBorderColor;
+    private final Color suggestionsTextColor;
+    private final Color suggestionBorderColor;
 
     public SuggestionLabel(String string, final Color borderColor, Color suggestionsTextColor, AutoSuggestor autoSuggestor) {
         super(string);
