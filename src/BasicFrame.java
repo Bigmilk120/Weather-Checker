@@ -24,6 +24,7 @@ public class BasicFrame extends JPanel{
         JButton goBack = new JButton("Return");
         goBack.setPreferredSize(new Dimension(100,25));
 
+
         add(temperature);
         add(weather);
         add(details);

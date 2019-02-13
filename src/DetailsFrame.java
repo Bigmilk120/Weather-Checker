@@ -14,8 +14,6 @@ public class DetailsFrame extends JPanel {
         temperature.setPreferredSize(new Dimension(500,25));
         weather.setPreferredSize(new Dimension(500,25));
 
-        JLabel jlb = new JLabel();
-        jlb.setIcon(new ImageIcon(getClass().getResource("rain.jpg")));
 
         JButton details = new JButton("Details");
         details.setPreferredSize(new Dimension(100,25));
@@ -42,7 +40,6 @@ public class DetailsFrame extends JPanel {
         add(maxTemperature);
         add(humidity);
         add(pressure);
-        add(jlb);
         add(goBack);
 
         goBack.addActionListener(g->{
