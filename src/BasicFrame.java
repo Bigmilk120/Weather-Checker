@@ -21,13 +21,21 @@ public class BasicFrame extends JPanel{
         JButton details = new JButton("Details");
         details.setPreferredSize(new Dimension(100,25));
 
+        JButton goBack = new JButton("Return");
+        goBack.setPreferredSize(new Dimension(100,25));
+
         add(temperature);
         add(weather);
         add(details);
+        add(goBack);
         details.addActionListener(d ->{
             add(new DetailsFrame(data));
             details.setVisible(false);
             setVisible(true);
+        });
+        goBack.addActionListener(g ->{
+            setVisible(false);
+            add(new AskPanel());
         });
     }
 }
